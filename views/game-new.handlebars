@@ -1,0 +1,23 @@
+<br>
+<br>
+<div class="container">
+  <input type="button" id='script' name="scriptbutton" value=" Run Script " onclick="game()">
+   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+
+   </script>
+    <script>
+      function game(){
+          $.ajax({
+            url: "/game.py",
+          }).done(function() {
+            alert('finished python script');;
+          });
+        }
+      </script>
+      <br>
+      <br>
+  <h1>
+    We are still trouble shooting this portion of the website, but for those computer savy users you can download our code for our Ai art maker if you would like to try on your own, it is python so you will need a python shell.
+  </h1>
+     <button href="/game.py" download="game.py">Download!</button>
+</div>
